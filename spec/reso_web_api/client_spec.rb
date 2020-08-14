@@ -8,7 +8,7 @@ RSpec.describe ResoWebApi::Client do
 
   describe '.new' do
     it 'requires auth option' do
-      expect { ResoWebApi::Client.new(endpoint: endpoint) }.to raise_error(ArgumentError, /auth/)
+      expect { ResoWebApi::Client.new(endpoint: endpoint) }.to raise_error(KeyError, /auth/)
     end
 
     it 'instantiates auth strategy if given a hash' do

@@ -21,12 +21,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'faraday', '~> 0.15.0'
-  spec.add_dependency 'frodata', '~> 0.9.2'
-  spec.add_dependency 'dry-initializer', '~> 1.4.1'
+  spec.add_dependency "faraday", ">= 0.15.0", "<= 0.17"
+  spec.add_dependency "frodata", "~> 0.9.2"
+  spec.add_dependency "dry-initializer", "~> 3.0.0"
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "simplecov", "~> 0.15"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "simplecov"
 end

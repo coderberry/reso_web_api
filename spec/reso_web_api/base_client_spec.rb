@@ -3,7 +3,7 @@ RSpec.describe ResoWebApi::BaseClient do
 
   describe '.new' do
     it 'requires endpoint option' do
-      expect { ResoWebApi::BaseClient.new }.to raise_error(ArgumentError, /endpoint/)
+      expect { ResoWebApi::BaseClient.new }.to raise_error(KeyError, /endpoint/)
     end
   end
 
